@@ -12,7 +12,7 @@ export default function PopupForm({ isOpen, onClose, onSubmit}) {
     onSubmit({ author, title });
     onClose(); // Close the pop-up after submitting
     axios
-      .post("https://node41091-noderest.proen.app.ruk-com.cloud/books", {
+      .post("https://node58166-env-pt.proen.app.ruk-com.cloud/books/", {
         author: author,
         title: title
       })
